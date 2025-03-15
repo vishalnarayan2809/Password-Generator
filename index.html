@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="hero">
+        <h1>
+            Generate a <br><span id="green_text">random password</span>
+        </h1>
+        <p>Never use an insecure password again</p>
+        <button id="green-btn" onclick="generatePass()">Generate passwords</button>
+        <hr id="divider">  
+        <div>
+            <button id="pwd-btn1" class="pwd-btn" onclick="copy1()">
+            <p id="pwd1" class="pwd"></p>
+            </button>
+            <button id="pwd-btn1" class="pwd-btn" onclick="copy2()">
+            <p id="pwd2" class="pwd"></p>
+              </button>  
+        </div> 
+       <p>Click to Copy</p>
+       <form>
+     <input type="checkbox" onclick="toggleNumbers()">
+    <label > Include Numbers</label><br>
+    <input type="checkbox" onclick="toggleSpecialChars()">
+    <label>Include Special Characters</label><br>
+    <input type="number" id="number" value="15" onclick="setpasswordLength()">
+    <label>Enter password length</label><br>
+    </form> 
+
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
